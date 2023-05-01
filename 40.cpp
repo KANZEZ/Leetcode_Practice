@@ -6,6 +6,10 @@
 #include <vector>
 #include <algorithm>
 // 40. Combination Sum II
+// backtracing strategies: 
+// 1.avoid duplicate answer(candidates don't have duplicate ones and answers can't have duplicate candidates): start choosing candidates from next index
+// 2.avoid duplicate answer(candidates don't have duplicate ones and answers can have duplicate candidates): start choosing candidates from current index
+// 3.avoid duplicate answer(candidates have duplicate ones and answers can have duplicate candidates): sort first, then base on 1, add this step: avoid the duplicate candidate when choosing one.
 using namespace std;
 
 class Solution {
